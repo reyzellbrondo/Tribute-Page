@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="images/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg"</a>
+            <div id="nav-links">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">MENU</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <section id="main-content">
+        <div>
+            <h1 id="title">MASTER KATSU</h1>
+           
+            <p id="description">
+            Thank you for taking the time<br> to fill up this survey form!
+            </p> 
+        </div>
+        
+        <div class="main-content">
+            <div class="form-content">
+                <form id="survey-form" method="get" action="myPage.html">
+                    <label for="name" id="name-label">Name</label>
+                    <input id="name" type="text" required placeholder="Enter your name"/>
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email" type="email" required placeholder="Enter your email"/>
+                    <label for="number" id="number-label">Rate from 1 to 10</label>
+                    <input id="number" type="number" min="1" max="10" required placeholder="Enter your rate"/>
+
+                    <label for="dropdown">Which product of ours is your favorite?</label>
+                    <select id="dropdown">
+                        <option value="master-katsu">Master Katsu</option>
+                        <option value="ala-king-katsu">Ala King Katsu</option>
+                        <option value="chicken-wings">Chicken Wings</option>
+                        <option value="chicken-poppers">Chicken Poppers</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>Would you recommend our shop to a friend?</legend>
+                        <input type="radio" name="recommend" checked id="yes" value="yes"/>
+                        <label for="yes">Yes</label> <br/>
+                        <input type="radio" name="recommend" id="maybe" value="maybe"/>
+                        <label for="maybe">Maybe</label><br/>
+                        <input type="radio" name="recommendm" id="not-sure" value="not-sure"/>
+                        <label for="not-sure">Not sure</label><br/>
+
+                    </fieldset>
+
+                    <p>What would you like us to improved?</p>
+                    <input type="checkbox" id="drinks" name="drinks" value="drinks">
+                    <label for="drinks">Drinks</label><br>
+                    <input type="checkbox" id="serving-quantity" name="serving-quantity" value="serving-quantity">
+                    <label for="serving-quantity">Serving Quantity</label><br>
+                    <input type="checkbox" id="add-more-menu" name="add-more-menu" value="add-more-menu">
+                    <label for="add-more-menu">Add more menu</label><br>
+
+                    <label for="comment">Any comments or suggestions?</label>
+                    <textarea rows="4" cols="50" id="comment">Enter your comment here...</textarea>
+
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    </section>
+    
+</body>
+</html>
